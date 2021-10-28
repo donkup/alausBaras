@@ -1,1 +1,7 @@
 <p>item-list works!</p>
+<a routerLink="/cart">krepselis</a>
+
+<ng-container *ngFor="let item of itemService.items">
+    <app-item [item]="item">
+    </app-item>
+</ng-container>
