@@ -1,0 +1,26 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.skmygt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+.mygtukai {
+  display: flex;
+  gap: 20px;
+  opacity: 60%;
+  background: none;
+}
+.face {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

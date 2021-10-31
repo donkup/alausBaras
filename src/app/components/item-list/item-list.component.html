@@ -1,11 +1,20 @@
-<p>item-list works!</p>
-<div>
-    <a routerLink="/cart">krepselis</a>
-    {{cartCount()}}
+<div class="body">
+    <h1>Alaus baras</h1>
+    <div class="skmygt">
+        <div class="skaitliukas">
+            <a routerLink="/cart"><i class="fa fa-shopping-cart"></i>krepselis</a>
+            {{cartCount()}}
+        </div>
+        <div class="mygtukai">
+            <button (click)="orderByName()">rikiuoti pagal pavadinima</button>
+            <button (click)="orderByAbv()">rikiuoti pagal alaus stipruma</button>
+        </div>
+    </div>
+
 </div>
-<button (click)="orderByName()">rikiuoti pagal pavadinima</button>
-<button (click)="orderByAbv()">rikiuoti pagal alaus stipruma</button>
-<ng-container *ngFor="let item of items">
-    <app-item [item]="item">
-    </app-item>
-</ng-container>
+<div class="face">
+    <ng-container *ngFor="let item of items">
+        <app-item [item]="item">
+        </app-item>
+    </ng-container>
+</div>
