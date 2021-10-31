@@ -21,4 +21,20 @@ export class ItemListComponent implements OnInit {
     return this.cartSevice.cartCount();
   }
 
+  orderByName(){
+    this.items?.sort((a,b) => {
+      return a.name.localeCompare(b.name);
+    })
+  }
+
+  orderByAbv(){
+      this.items?.sort((a,b) => {
+        /*if (a.abv>b.abv) return 1;
+        if (a.abv<b.abv) return -1;
+        return 0;*/
+
+        return a.abv-b.abv;
+    })
+  } 
+
 }

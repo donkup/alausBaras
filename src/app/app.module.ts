@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ItemComponent } from './components/item/item.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
+import { ItemDetailsComponent } from './components/item-details/item-details.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CartComponent,
     ItemComponent,
-    ItemListComponent
+    ItemListComponent,
+    ItemDetailsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

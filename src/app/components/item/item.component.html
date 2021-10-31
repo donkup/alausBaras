@@ -1,7 +1,8 @@
 <div>
-    <img [src]="item.image_url" alt="photo">
+    <img class="img" [src]="item.image_url" alt="photo">
     <h3>{{item.name}}</h3>
     <p>{{item.description}}</p>
+    <a [routerLink]="['/details', item.id]">Placiau</a>
     <button class="btn" (click)="addToCart()">Prideti</button>
     <button class="btn" (click)="removeFromCart()" [disabled]="!inCart()">Išimti</button>
 </div>

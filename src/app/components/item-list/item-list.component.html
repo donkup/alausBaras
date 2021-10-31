@@ -3,7 +3,8 @@
     <a routerLink="/cart">krepselis</a>
     {{cartCount()}}
 </div>
-
+<button (click)="orderByName()">rikiuoti pagal pavadinima</button>
+<button (click)="orderByAbv()">rikiuoti pagal alaus stipruma</button>
 <ng-container *ngFor="let item of items">
     <app-item [item]="item">
     </app-item>

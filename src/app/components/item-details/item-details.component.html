@@ -1,0 +1,10 @@
+<div>
+    <p>item-details works!</p>
+    <img class="img" [src]="alus.image_url" alt="photo">
+    <h3>{{alus.name}}</h3>
+    <p>{{alus.description}}</p>
+    <p>Stiprumas {{alus.abv}}</p>
+    <p *ngFor="let food of alus.food_pairing">
+        {{food}};
+    </p>
+</div>
