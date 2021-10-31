@@ -1,7 +1,7 @@
 <div>
-    <h5>{{item.id}}</h5>
-    <div>{{item.img}}</div>
+    <img [src]="item.image_url" alt="photo">
     <h3>{{item.name}}</h3>
     <p>{{item.description}}</p>
-
+    <button class="btn" (click)="addToCart()">Prideti</button>
+    <button class="btn" (click)="removeFromCart()" [disabled]="!inCart()">Išimti</button>
 </div>
